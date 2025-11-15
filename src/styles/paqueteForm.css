@@ -1,0 +1,75 @@
+/* ======== FORMULARIO PAQUETE – TEMA DARK ======== */
+
+.form-paquete {
+  width: 380px;
+  padding: 1.8rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  background: #1e1e1e; /* Fondo oscuro */
+  border-radius: 14px;
+  border: 1px solid #333;
+
+  font-family: Arial, sans-serif;
+  color: #f2f2f2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Campos */
+.campo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-form label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #dcdcdc;
+}
+
+/* Inputs y selects */
+.campo-form input,
+.campo-form select {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+
+  background: #2a2a2a;
+  color: #f2f2f2;
+}
+
+.campo-form input:focus,
+.campo-form select:focus {
+  border-color: #4caf50; /* Borde verde suave */
+  outline: none;
+}
+
+/* Botón */
+.btn-enviar {
+  padding: 0.8rem;
+  background: #00804e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-enviar:hover {
+  background: #00a063;
+}
+
+.card {
+  padding: 1.5rem;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+}
+
+.btn-crear {
+  margin-bottom: 1rem; /* Espaciado entre el botón y la lista */
+  display: inline-block;
+}

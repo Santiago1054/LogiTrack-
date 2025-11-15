@@ -1,17 +1,20 @@
-
+import { Routes, Route } from "react-router-dom";
 import './App.css'
+import PantallaPrincipal from './components/PantallaPrincipal'
+import ListaDePaquetes from './components/ListaDePaquetes'
+import PaqueteForm from './components/PaqueteForm'
 function App() {
   return (
     <>
-      <div>
+      <Routes>
 
 
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
+        <Route path="/" element={<PantallaPrincipal />} />
+       
+        <Route path="/crear-paquete" element={<PaqueteForm />} />
 
 
-      </div>
+      </Routes>
 
     </>
   )
