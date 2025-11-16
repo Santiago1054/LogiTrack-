@@ -1,0 +1,98 @@
+/* ===== CONTENEDOR GENERAL ===== */
+.paquete-detalle {
+  max-width: 650px;
+  margin: 2.5rem auto;
+  padding: 2.5rem;
+  background: #fafafa;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* TÍTULO */
+.paquete-detalle h1 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+  color: #222;
+  font-weight: 600;
+}
+
+/* ===== TABLA ===== */
+.paquete-detalle table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.paquete-detalle tr {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.paquete-detalle td {
+  padding: 14px 18px;
+  font-size: 1rem;
+}
+
+/* Primera columna */
+.paquete-detalle td:first-child {
+  font-weight: 600;
+  color: #6b6b6b;
+  background: #f3f3f3;
+  width: 42%;
+  border-right: 1px solid #e6e6e6;
+}
+
+/* Segunda columna */
+.paquete-detalle td:last-child {
+  color: #222;
+}
+
+/* ===== BADGE DE ESTADO ===== */
+.estado-badge {
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+}
+
+/* Colores elegantes */
+.estado-creado {
+  background: #ffe5e9;
+  color: #c9184a;
+}
+
+.estado-en_transito {
+  background: #fcf3d8;
+  color: #b08900;
+}
+
+.estado-entregado {
+  background: #e4fbe8;
+  color: #2a9d3f;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .paquete-detalle {
+    padding: 1.5rem;
+  }
+
+  .paquete-detalle table {
+    border-spacing: 0 10px;
+  }
+
+  .paquete-detalle td {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+}

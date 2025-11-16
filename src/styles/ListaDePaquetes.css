@@ -12,5 +12,55 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #000000;
+}
+/* --- Estilos de tabla --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* --- Selector de estado --- */
+.selector-estado {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estado: CREADO → rojo suave */
+.estado-creado {
+  background-color: #ffb0b0;
+  color: #a20000;
+}
+
+/* Estado: EN TRANSITO → amarillo */
+.estado-en_transito {
+  background-color: #ffe599;
+  color: #8a6d00;
+}
+
+/* Estado: ENTREGADO → verde */
+.estado-entregado {
+  background-color: #b7f5b1;
+  color: #006b1b;
+}
+
+/* (Quitar flecha fea de Windows para estilo más limpio) */
+.selector-estado:focus {
+  outline: none;
 }

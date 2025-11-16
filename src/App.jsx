@@ -3,6 +3,7 @@ import './App.css'
 import PantallaPrincipal from './components/PantallaPrincipal'
 import ListaDePaquetes from './components/ListaDePaquetes'
 import PaqueteForm from './components/PaqueteForm'
+import PaqueteDetalle from './components/PaqueteDetalle'
 function App() {
   return (
     <>
@@ -10,8 +11,9 @@ function App() {
 
 
         <Route path="/" element={<PantallaPrincipal />} />
-       
+
         <Route path="/crear-paquete" element={<PaqueteForm />} />
+        <Route path="/detalle-paquete/:id" element={<PaqueteDetalle />} />
 
 
       </Routes>
