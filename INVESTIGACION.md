@@ -100,9 +100,103 @@ A medida que la plataforma crece y recibe más paquetes:
   
 ![Texto alternativo](DiagramaDeActividades.jpeg)
 
+## **Integracion de envio de mensajes**
+- Estructura del Back-end
+
+![Texto alternativo](Estructura.png)
+
+Para integrar una API externa de envío de correos electrónicos, trabajaremos desde el Back-end del proyecto.
+
+Dentro del directorio src se encuentran las carpetas controllers, routes y el archivo principal app.js, que organizan la estructura del sistema.
+
+- Controllers:
+  
+  Aquí se implementa la lógica de cada funcionalidad.
+  
+  Para el envío de correos, este módulo se encargará de:
+  
+  - Construir el contenido del mensaje.
+
+  - Realizar la conexión con la API externa (por ejemplo, SendGrid).
+
+  - (Opcional) Registrar en la base de datos los correos enviados.
+
+  - Manejar errores mediante bloques try/catch para garantizar estabilidad.
+
+    Ejemplo:
+    
+                    export const obtenerPaquetes = async (req, res) => {
+                          const resultado = await pool.query("SELECT * FROM paquete");
+                          res.json(resultado.rows);
+                        };
+
+    Este fragmento es el encargado de listar los paquetes del proyecto, controller es el encargado de la logica, aqui tambien se puede       codificar el CRUD completo (Crear, actualizar, eliminar y leer) etc. 
+ 
+- Routes:
+    
+  En esta carpeta se definen los endpoints que permiten acceder a cada funcionalidad.
+  
+  Estos endpoints deben estar organizados de forma clara y consistente.
+
+    Por ejemplo:
+
+       
+        router.post("/envio-email",generadorEmail);
+      
+    Aqui se debe especificar router.TipoDePeticion("/ruta", logicaDelController)
+  
+    podemos realizar distintas peticiones:
+  
+          get 
+          post
+          put --> Actualizar
+          delete --> Eliminar
+
+    Por ejemplo:
+
+       
+       // Actualizar estado de un paquete
+        router.put("/paquetes/:id/estado", actualizarEstado);
+
+  En mi controller debo tener
+  
+          export const actualizarEstado = async (req, res) => {...}
+
+  
+    Cada ruta debe:
+
+    - Validar los datos recibidos antes de llamar al controlador.
+
+    - Ser modular y fácil de mantener.
+
+- app.js:
+  
+    Este archivo es el punto de arranque del Back-end.
+  
+    Su función es:
+
+    - Establecer la ruta base para los módulos del sistema.
+
+     Por ejemplo:
+
+       
+            app.use("/api",rutas);
+            
+    - Importar y registrar las rutas creadas en la carpeta routes.
+
+    - Configurar los middlewares necesarios (JSON parser, CORS, logs, manejo de errores).
+    
+    - Cargar las variables de entorno desde .env.
+      
+     
+      
+ 
+    
+
 ## **Bibliografia**
 
 Quind S.A.S. (2024, 23 de noviembre). Apache NiFi en las Industrias: Transformando la Gestión de Datos y la Integración de Sistemas. Quind. <https://quind.io/blog/desarrollo/apache-nifi-en-las-industrias-transformando-la-gestion-de-datos-y-la-integracion-de-sistemas/>
+
 
 
 
