@@ -36,10 +36,17 @@ Cada nodo de nifi corre sobre una JVM en el sistema anfitrión. Y se componen po
 **Repositorio de Contenido:** Guarda la información real del contenido de los FlowFiles.
 
 **Repositorio de Procedencia**: Guarda los eventos de procedencia, permitiendo la trazabilidad y auditoría de los datos.
+# **¿Por qué usar NIFI?**
 
+Nifi es una herramienta muy potente y altamente escalable a la hora de conectar diferentes fuentes de datos, transformarlos y entregarlos a destinos variados. Su capacidad para manejar flujos de datos en tiempo real, junto con una administración visual simplificada, lo convierte en una opción ideal para empresas que buscan automatizar procesos complejos y reducir la intervención manual. Algunas de sus ventajas clave son:
+
+- NiFi ofrece integración con una variedad de orígenes y destinos, como Kafka, RabbitMQ, HTTP, WebSockets, y bases de datos SQL y NoSQL, entre otros. Además, es extensible mediante complementos personalizados.
+- Su Repositorio de Procedencia permite visualizar y rastrear el flujo de los datos desde su origen hasta el destino, facilitando auditorías, diagnósticos y cumplimiento normativo.
+- NiFi permite conectar múltiples nodos, con la capacidad de escalar horizontalmente para manejar grandes volúmenes de datos. Asimismo, permite ajustar dinámicamente la carga por flujo y proceso, garantizando un procesamiento eficiente y continuo incluso bajo alta demanda.
 
 
 ## **Bibliografia**
 
 Quind S.A.S. (2024, 23 de noviembre). Apache NiFi en las Industrias: Transformando la Gestión de Datos y la Integración de Sistemas. Quind. <https://quind.io/blog/desarrollo/apache-nifi-en-las-industrias-transformando-la-gestion-de-datos-y-la-integracion-de-sistemas/>
+
 
