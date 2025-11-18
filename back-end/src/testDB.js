@@ -1,3 +1,4 @@
+// solo para probar la conexión a la base de datos
 import dotenv from "dotenv";
 dotenv.config();
 

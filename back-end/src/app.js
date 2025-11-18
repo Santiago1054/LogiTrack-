@@ -1,12 +1,15 @@
+// importar dependencias
 import express from "express";
 import cors from "cors";
+
+// importar rutas
 import paquetesRoutes from "./routes/paquetes.routes.js";
 
 const app = express();
 
 // Middlewares
-app.use(cors());
-app.use(express.json());
+app.use(cors()); // activar middleware cors
+app.use(express.json()); // activar middleware json
 
 // Rutas
 app.use("/api", paquetesRoutes);
