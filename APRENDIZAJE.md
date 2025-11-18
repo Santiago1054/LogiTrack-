@@ -28,3 +28,10 @@ sitios generadores como BestRandoms (generador de direcciones) y generadordenomb
 Finalmente, consulté material académico, como recursos de ingeniería de software de la Universidad Católica de Pereira y
 trabajos previos relacionados con UML. Para resolver dudas puntuales, utilicé asistencia de inteligencia artificial mediante ChatGPT,
 Gemini y GitHub Copilot.
+
+## **¿Qué aprendiste nuevo?**
+
+Algo nuevo que aprendí durante esta prueba fue el funcionamiento y la utilidad de Apache NiFi. Aunque todavía no puedo decir que lo domino —porque requiere práctica constante para aprovecharlo plenamente—, la investigación que realicé me permitió comprender su propósito, su arquitectura y la forma en que facilita el manejo de grandes volúmenes de información.
+
+A través de la lectura de documentación oficial, artículos especializados y ejemplos de uso, descubrí cómo NiFi permite diseñar flujos de datos, automatizar procesos y conectar múltiples sistemas de manera eficiente. Este proceso de investigación no solo me abrió la puerta a una herramienta que no conocía, sino que también me ayudó a ampliar mi perspectiva sobre soluciones de integración y procesamiento de datos.
+
