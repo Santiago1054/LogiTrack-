@@ -251,9 +251,10 @@ Este enfoque garantiza que el sistema sea robusto, estable y tolerante a fallos,
  
     
 
-# **Bibliografia**
+# **Bibliografía**
 
 Quind S.A.S. (2024, 23 de noviembre). Apache NiFi en las Industrias: Transformando la Gestión de Datos y la Integración de Sistemas. Quind. <https://quind.io/blog/desarrollo/apache-nifi-en-las-industrias-transformando-la-gestion-de-datos-y-la-integracion-de-sistemas/>
+
 
 
 
