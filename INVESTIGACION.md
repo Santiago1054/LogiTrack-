@@ -20,7 +20,7 @@
 
 ---
 
-# **Integración con servicios externos - Apache Ni-Fi**
+# **Introducción**
 
 El manejo de grandes cantidades de datos provenientes de diversas fuentes es un desafío complejo, especialmente al intentar conectar estas fuentes y escalar los sistemas de ETL (Extracción, Transformación y Carga). La necesidad de gestionar flujos de datos en tiempo real, asegurar la integridad y seguridad de los datos, y facilitar la integración entre sistemas heterogéneos ha impulsado el desarrollo de soluciones avanzadas para la automatización de flujos de datos.
 
@@ -254,6 +254,7 @@ Este enfoque garantiza que el sistema sea robusto, estable y tolerante a fallos,
 ## **Bibliografia**
 
 Quind S.A.S. (2024, 23 de noviembre). Apache NiFi en las Industrias: Transformando la Gestión de Datos y la Integración de Sistemas. Quind. <https://quind.io/blog/desarrollo/apache-nifi-en-las-industrias-transformando-la-gestion-de-datos-y-la-integracion-de-sistemas/>
+
 
 
 
