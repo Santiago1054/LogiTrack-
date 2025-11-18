@@ -20,8 +20,26 @@ Su arquitectura se basa en el concepto de flujos de datos (dataflows), que consi
 
 **Extensibilidad:** NiFi está diseñado para ser altamente extensible, permitiendo la creación de componentes personalizados como procesadores y servicios de controlador. Utiliza un modelo de cargador de clases aislado, asegurando que las extensiones no entren en conflicto. Además, su protocolo de comunicación S2S permite transferir datos de manera eficiente y segura entre instancias de NiFi.
 
+# **Arquitectura**
+
+NiFi puede operar de forma clusterizada a partir de la versión 1.0, utilizando el paradigma de agrupación Zero-Leader. En este modelo, cada nodo realiza las mismas tareas con la información ingresada, pero repartida en diferentes nodos.
+Cada nodo de nifi corre sobre una JVM en el sistema anfitrión. Y se componen por:
+
+**Web Server:** Expone el api http de NIFI y la interfaz de usuario para gestionar los flujos de datos.
+
+**Flow Controller:** Coordina el procesamiento y distribución de los flujos, tanto los procesadores como las extensiones.
+
+**Extensiones:** Son los componentes que amplían las funcionalidades de NiFi, como los Procesadores, Controladores de servicios, y otros módulos.
+
+**Repositorio de Flowfile:** Rastrea el estado de los FlowFiles, y su ubicación en el flujo de la aplicación.
+
+**Repositorio de Contenido:** Guarda la información real del contenido de los FlowFiles.
+
+**Repositorio de Procedencia**: Guarda los eventos de procedencia, permitiendo la trazabilidad y auditoría de los datos.
+
 
 
 ## **Bibliografia**
 
 Quind S.A.S. (2024, 23 de noviembre). Apache NiFi en las Industrias: Transformando la Gestión de Datos y la Integración de Sistemas. Quind. <https://quind.io/blog/desarrollo/apache-nifi-en-las-industrias-transformando-la-gestion-de-datos-y-la-integracion-de-sistemas/>
+
