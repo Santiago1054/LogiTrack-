@@ -187,7 +187,42 @@ Dentro del directorio src se encuentran las carpetas controllers, routes y el ar
     - Configurar los middlewares necesarios (JSON parser, CORS, logs, manejo de errores).
     
     - Cargar las variables de entorno desde .env.
-      
+ 
+ # Manejo de Excepciones en el Back-end
+
+El manejo de excepciones es esencial para mantener la integridad del Back-end.  
+Cuando controlamos los errores de manera adecuada, evitamos que el sistema colapse ante fallos inesperados y garantizamos que continúe funcionando de forma estable, incluso si un módulo externo —como una API de envío de correos— presenta problemas.
+
+Una buena gestión de errores permite:
+
+- Detectar rápidamente fallos en servicios externos.  
+- Registrar información útil para diagnóstico y depuración.  
+- Enviar respuestas claras y controladas al front-end.  
+- Mantener una experiencia estable para el usuario final.  
+- Evitar que errores críticos se propaguen al resto del sistema.  
+- Implementar acciones alternativas como reintentos, colas o servicios de respaldo.
+
+## ¿Qué sucede si la API externa falla?
+
+Si la API externa de correos llega a fallar, el Back-end no debe detenerse ni devolver un error sin sentido. En su lugar, debe realizar varias acciones clave:
+
+1. **Capturar el error con `try/catch`.**  
+   Esto evita que la aplicación se bloquee y permite manejar el problema de forma segura.
+
+2. **Generar una respuesta controlada.**  
+   El sistema debe informar al front-end que el servicio no está disponible sin mostrar mensajes técnicos o internos.
+
+3. **Registrar el error.**  
+   Guardar detalles del fallo en logs o en la base de datos facilita la detección de patrones y la solución del problema.
+
+4. **Ejecutar acciones alternativas.**  
+   Dependiendo del caso, se pueden aplicar reintentos, almacenar el correo en una cola o usar un proveedor de respaldo.
+
+5. **Mantener el sistema operativo.**  
+   Otros módulos no deben verse afectados por el fallo de un servicio externo.
+
+Este enfoque garantiza que el sistema sea robusto, estable y tolerante a fallos, incluso cuando depende de servicios externos que pueden fallar en cualquier momento.
+
      
       
  
@@ -196,6 +231,7 @@ Dentro del directorio src se encuentran las carpetas controllers, routes y el ar
 ## **Bibliografia**
 
 Quind S.A.S. (2024, 23 de noviembre). Apache NiFi en las Industrias: Transformando la Gestión de Datos y la Integración de Sistemas. Quind. <https://quind.io/blog/desarrollo/apache-nifi-en-las-industrias-transformando-la-gestion-de-datos-y-la-integracion-de-sistemas/>
+
 
 
 
