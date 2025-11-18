@@ -1,0 +1,53 @@
+/* ======== CARD PRINCIPAL ======== */
+
+/* ======== CARD ======== */
+
+.card {
+  padding: 1.5rem;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+}
+
+/* TÍTULO */
+.card h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #eaeaea;
+}
+
+/* ======== BOTÓN Crear Paquete ======== */
+
+.btn-enviar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20%;
+  height: 48px;
+
+  background: #00804e;
+  color: #fff !important; /* Evita color azul en links */
+  text-decoration: none; /* Quita subrayado */
+
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.btn-enviar:hover {
+  background: #00a063;
+}
+
+/* Asegurar que el <Link> no cambie color al visitarse */
+.btn-enviar:visited,
+.btn-enviar:active,
+.btn-enviar:focus {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+}

@@ -4,25 +4,31 @@ import { Link, useParams } from "react-router-dom";
 import "../styles/paqueteDetalle.css";
 
 function PaqueteDetalle() {
+
     const { id } = useParams(); // <-- Aquí tomamos el id de la URL
-    const [paquete, setPaquete] = useState({});
+    const [paquete, setPaquete] = useState({}); // <-- Lista de paquetes
+
+    // Función para formatear la fecha
     const formatearFechaLarga = (fechaISO) => {
-        const fecha = new Date(fechaISO);
-        return fecha.toLocaleDateString("es-CO", {
-            weekday: "long",
-            year: "numeric",
-            month: "long",
-            day: "numeric"
+        const fecha = new Date(fechaISO); // <-- Crear objeto Date
+
+        return fecha.toLocaleDateString("es-CO", { // <-- Formatear fecha
+            weekday: "long", // <-- Nombre de la semana
+            year: "numeric", // <-- Año
+            month: "long", // <-- Mes
+            day: "numeric" // <-- Día
         });
+
     };
+    // Obtener los datos del paquete
     useEffect(() => {
-        fetch(`http://localhost:4000/api/paquetes/${id}`)
-            .then((res) => res.json())
+        fetch(`http://localhost:4000/api/paquetes/${id}`) // <-- Obtener datos del paquete
+            .then((res) => res.json()) // <-- Obtener datos en formato JSON
             .then((data) => {
                 console.log("DATA", data);
                 setPaquete(data);
             });
-    }, [id]);
+    }, [id]); // <-- Obtener datos cuando cambie el id
 
     return (
         <section className="paquete-detalle">
@@ -52,7 +58,7 @@ function PaqueteDetalle() {
                     </tr>
                 </tbody>
             </table>
-            <Link className="btn-enviar" to="/">Volver al listado de paquetes</Link>
+            <Link className="btn-volver" to="/">Ir atras</Link>
         </section >
     );
 }

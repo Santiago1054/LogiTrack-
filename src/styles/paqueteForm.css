@@ -8,7 +8,7 @@
   flex-direction: column;
   gap: 1.2rem;
 
-  background: #1e1e1e; /* Fondo oscuro */
+  background: #1e1e1e;
   border-radius: 14px;
   border: 1px solid #333;
 
@@ -42,34 +42,70 @@
 
 .campo-form input:focus,
 .campo-form select:focus {
-  border-color: #4caf50; /* Borde verde suave */
+  border-color: #4caf50;
   outline: none;
 }
+.acciones-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
 
-/* Botón */
-.btn-enviar {
-  padding: 0.8rem;
+/* Estilo base igualado */
+.btn-cancelar,
+.btn-crear {
+  flex: 1;
+  min-width: 140px;
+  height: 45px; /* Igual altura */
+
+  display: flex; /* Asegura alineación */
+  justify-content: center;
+  align-items: center;
+
+  padding: 0; /* Lo iguala más */
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+  text-decoration: none; /* Importante para el <Link> */
+}
+
+/* Botón cancelar */
+.btn-cancelar {
+  text-decoration: none;
+  background: #444;
+  color: #fff;
+  border: none;
+}
+
+.btn-cancelar:hover {
+  background: #555;
+}
+
+/* Botón crear */
+.btn-crear {
   background: #00804e;
   color: #fff;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.2s;
 }
 
-.btn-enviar:hover {
+.btn-crear:hover {
   background: #00a063;
 }
 
-.card {
-  padding: 1.5rem;
-  background: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 12px;
-}
+
 
 .btn-crear {
-  margin-bottom: 1rem; /* Espaciado entre el botón y la lista */
+  margin-bottom: 1rem;
   display: inline-block;
+}
+.btn-cancelar:visited,
+.btn-cancelar:active,
+.btn-cancelar:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
 }
