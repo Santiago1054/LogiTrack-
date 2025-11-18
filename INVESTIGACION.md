@@ -95,9 +95,15 @@ A medida que la plataforma crece y recibe más paquetes:
 
 - Ni-Fi se adapta a mayores cargas de trabajo,
 - permite añadir nodos de procesamiento sin afectar la operación.
+## **Diagrama de Actividades**
+- Cuando un paquete se entrega, enviar notificación por email
+  
+![Texto alternativo](DiagramaDeActividades.jpeg)
+
 ## **Bibliografia**
 
 Quind S.A.S. (2024, 23 de noviembre). Apache NiFi en las Industrias: Transformando la Gestión de Datos y la Integración de Sistemas. Quind. <https://quind.io/blog/desarrollo/apache-nifi-en-las-industrias-transformando-la-gestion-de-datos-y-la-integracion-de-sistemas/>
+
 
 
 
