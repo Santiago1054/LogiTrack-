@@ -15,9 +15,7 @@ El frontend está desarrollado con:
 
 #### 📌 Scripts disponibles
 
-  Comando         Descripción
-  --------------- ----------------------------------
-  `npm run dev`   Inicia el servidor de desarrollo
+ 
 
 ------------------------------------------------------------------------
 
@@ -36,6 +34,8 @@ Tecnologías empleadas:
 ------------------------------------------------------------------------
 
 ## 📥 Instalación
+
+## Importante: Clonar el repo dentro de una carpeta nueva (Logi-Track)
 
 ### 🔧 Prerrequisitos
 
@@ -74,9 +74,9 @@ Luego ingresa tu contraseña y deberías ver el prompt de PostgreSQL
 ``` sql
 CREATE DATABASE logitrack;
 
-\c logitrack;
+\c logitrack; // usa la base de datos
 
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp"; // extension para usar id aleatorios y unicos
 
 CREATE TABLE paquete (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
@@ -179,3 +179,4 @@ para usarse.
 ## 📘 Autor
 
 **Santiago Ramírez Castellanos**
+
