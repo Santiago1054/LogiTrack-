@@ -1,0 +1,130 @@
+/* ===== CONTENEDOR GENERAL ===== */
+.paquete-detalle {
+  max-width: 650px;
+  margin: 2.5rem auto;
+  padding: 2.5rem;
+  background: #1b1b1b; /* 🖤 Fondo oscuro */
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  transition: all 0.3s ease-in-out;
+  color: #e8e8e8; /* Texto claro */
+}
+
+/* TÍTULO */
+.paquete-detalle h1 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+  color: #f5f5f5; /* Texto más brillante */
+  font-weight: 600;
+}
+
+/* ===== TABLA ===== */
+.paquete-detalle table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  margin-top: 1.8rem;
+}
+
+.paquete-detalle tr {
+  background: #2a2a2a; /* Filas oscuras */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.paquete-detalle td {
+  padding: 14px 18px;
+  font-size: 1rem;
+  color: #eaeaea;
+}
+
+/* Primera columna */
+.paquete-detalle td:first-child {
+  font-weight: 600;
+  color: #c5c5c5;
+  background: #262626; /* Fondo ligeramente distinto */
+  width: 42%;
+  border-right: 1px solid #3a3a3a;
+}
+
+/* Segunda columna */
+.paquete-detalle td:last-child {
+  color: #f0f0f0;
+}
+
+/* ===== BADGE DE ESTADO ===== */
+/* (Se mantienen los colores originales tal cual pediste) */
+.estado-badge {
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+}
+
+/* Colores elegantes originales */
+.estado-creado {
+  background: #ffe5e9;
+  color: #c9184a;
+}
+
+.estado-en_transito {
+  background: #fcf3d8;
+  color: #b08900;
+}
+
+.estado-entregado {
+  background: #e4fbe8;
+  color: #2a9d3f;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .paquete-detalle {
+    padding: 1.5rem;
+  }
+
+  .paquete-detalle table {
+    border-spacing: 0 10px;
+  }
+
+  .paquete-detalle td {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+}
+/* Espacio entre la tabla y el botón */
+.paquete-detalle {
+  display: inline-block;
+  margin-top: 2rem; /* Aquí ajustas el espacio */
+}
+.btn-volver {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30%;
+  height: 48px;
+  background: #00804e;
+  color: #fff !important; /* Evita color azul en links */
+  text-decoration: none; /* Quita subrayado */
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.btn-volver:hover {
+  background: #00a063;
+}
