@@ -1,23 +1,25 @@
 # PARTE 3: REFLEXIÓN DE APRENDIZAJE
 
 ## Tabla de contenido
-1. [¿Qué fue lo más difícil de esta prueba?](##qué-fue-lo-más-difícil-de-esta-prueba)
-2. [¿Cómo lo resolví?](#cómo-lo-resolví)
-3. [¿Qué recursos consultaste?](#qué-recursos-consultaste)
-4. [¿Qué aprendiste nuevo?](#qué-aprendiste-nuevo)
-5. [Si tuvieras una semana más, ¿qué mejorarías?](#si-tuvieras-una-semana-más-qué-mejorarías)
-6. [Pregunta técnica](#pregunta-técnica)
+1. [¿Qué fue lo más difícil de esta prueba?](#que-fue-lo-mas-dificil-de-esta-prueba)  
+2. [¿Cómo lo resolví?](#como-lo-resolvi)  
+3. [¿Qué recursos consultaste?](#que-recursos-consultaste)  
+4. [¿Qué aprendiste nuevo?](#que-aprendiste-nuevo)  
+5. [Si tuvieras una semana más, ¿qué mejorarías?](#si-tuvieras-una-semana-mas-que-mejorarias)  
+6. [Pregunta técnica](#pregunta-tecnica)
 
 ---
 
-## 1. ¿Qué fue lo más difícil de esta prueba?
+<a name="que-fue-lo-mas-dificil-de-esta-prueba"></a>
+# **1. ¿Qué fue lo más difícil de esta prueba?**
 
 Lo más difícil de la prueba fue el manejo de Git. No porque la herramienta sea compleja, sino porque me hizo darme cuenta de la importancia de mantener un buen hábito de versionamiento; a veces no realizo commits con la frecuencia necesaria. También tuve algunos tropiezos iniciales con el archivo _gitignore_, que no funcionó como esperaba y permitió que archivos innecesarios, como _node_modules_, se filtraran en el control de versiones.  
 Estos detalles me ayudaron a identificar aspectos que debo fortalecer.
 
 ---
 
-## 2. ¿Cómo lo resolví?
+<a name="como-lo-resolvi"></a>
+## **2. ¿Cómo lo resolví?**
 
 Para resolver el problema, comencé investigando a profundidad sobre Git y las buenas prácticas para gestionar un repositorio.  
 Esta revisión inicial me permitió entender mejor los puntos que debía fortalecer y me dio una base más sólida para avanzar con seguridad.
@@ -29,6 +31,7 @@ Gracias a la combinación de investigación, análisis cuidadoso y apoyo en recu
 
 ---
 
+<a name="que-recursos-consultaste"></a>
 ## 3. ¿Qué recursos consultaste?
 
 Para desarrollar la prueba técnica consulté una variedad de recursos que me permitieron comprender mejor cada parte del proceso.
@@ -59,6 +62,7 @@ Para resolver dudas puntuales, utilicé asistencia de inteligencia artificial me
 
 ---
 
+<a name="que-aprendiste-nuevo"></a>
 ## 4. ¿Qué aprendiste nuevo?
 
 Algo nuevo que aprendí durante esta prueba fue el funcionamiento y la utilidad de Apache NiFi. Aunque todavía no puedo decir que lo domino —porque requiere práctica constante para aprovecharlo plenamente—, la investigación que realicé me permitió comprender su propósito, su arquitectura y la forma en que facilita el manejo de grandes volúmenes de información.
@@ -68,6 +72,7 @@ Este proceso de investigación no solo me abrió la puerta a una herramienta que
 
 ---
 
+<a name="si-tuvieras-una-semana-mas-que-mejorarias"></a>
 ## 5. Si tuvieras una semana más, ¿qué mejorarías?
 
 Si tuviera una semana adicional para trabajar en la prueba, me enfocaría en tres grandes mejoras:
@@ -83,14 +88,16 @@ Si tuviera una semana adicional para trabajar en la prueba, me enfocaría en tre
 
 ---
 
-## 6. Pregunta técnica 
- - Si te pidiera mañana agregar "historial de ubicaciones" al paquete (cada vez que cambia de estado guardar ciudad y fecha), ¿cómo lo harías? 
+<a name="pregunta-tecnica"></a>
+## 6. Pregunta técnica
+
+**Si te pidiera mañana agregar "historial de ubicaciones" al paquete (cada vez que cambia de estado guardar ciudad y fecha), ¿cómo lo harías?**
 
 Al igual que en el ejercicio de enviar una notificación por correo, antes de comenzar a desarrollar una nueva funcionalidad es fundamental comprender exactamente qué se solicita y cuál es el comportamiento esperado. En este caso, sería necesario entender cómo se actualiza la ubicación del paquete y cómo debe mostrarse dicha información dentro del sistema.
 
 Para visualizar cómo interactúan los componentes y los actores involucrados, recurriría a diagramas UML. Estos permitirían representar el flujo del proceso, no solo desde la perspectiva del sistema, sino también desde la interacción del usuario y otros elementos relacionados.
 
-Después de comprender el flujo, investigaría cómo implementar el nuevo módulo encargado de mostrar la ubicación cuando el estado del paquete cambie. También sería necesario modificar la estructura de la base de datos, agregando o ajustando campos para almacenar la ubicación actualizada y cualquier información adicional que el sistema requiera para el seguimiento. *(Es probable que nuevas ideas surjan mientras se desarrolla el módulo.)*
+Después de comprender el flujo, investigaría cómo implementar el nuevo módulo encargado de registrar y mostrar el historial de ubicaciones cada vez que el estado del paquete cambie. También sería necesario modificar la estructura de la base de datos, agregando una tabla o ajustando campos para almacenar la ciudad, la fecha y cualquier metadato adicional que el sistema requiera para el seguimiento. *(Es probable que nuevas ideas surjan mientras se desarrolla el módulo.)*
 
 Antes de comenzar a desarrollar, crearía una nueva rama llamada, por ejemplo, `feature/seguimiento-del-paquete`.  
 En esta rama implementaría toda la nueva funcionalidad y, una vez completada, realizaría un merge hacia la rama `dev`.
@@ -98,4 +105,3 @@ En esta rama implementaría toda la nueva funcionalidad y, una vez completada, r
 Dentro de `dev`, aplicaría los ajustes generales necesarios y luego movería los cambios a una rama de `testing` para evaluar su comportamiento frente a distintos casos y asegurar su correcto funcionamiento antes de integrarlo al flujo principal del proyecto.
 
 ---
-
