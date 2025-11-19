@@ -1,8 +1,10 @@
-CREATE DATABASE logitrack;
+// Ejecutar en SQL Shell (psql)
+// Ejecutar linea por linea
+CREATE DATABASE logitrack; // Crea la base de datos
 
-\c logitrack;
+\c logitrack; // Usar la base de datos;
 
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp"; // Extension para poder usar id unicos y aleatorios;
 
 CREATE TABLE paquete (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
