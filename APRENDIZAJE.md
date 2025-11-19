@@ -1,7 +1,7 @@
 # PARTE 3: REFLEXIÓN DE APRENDIZAJE
 
 ## Tabla de contenido
-1. [¿Qué fue lo más difícil de esta prueba?](#qué-fue-lo-más-difícil-de-esta-prueba)
+1. [¿Qué fue lo más difícil de esta prueba?](##qué-fue-lo-más-difícil-de-esta-prueba)
 2. [¿Cómo lo resolví?](#cómo-lo-resolví)
 3. [¿Qué recursos consultaste?](#qué-recursos-consultaste)
 4. [¿Qué aprendiste nuevo?](#qué-aprendiste-nuevo)
@@ -98,3 +98,4 @@ En esta rama implementaría toda la nueva funcionalidad y, una vez completada, r
 Dentro de `dev`, aplicaría los ajustes generales necesarios y luego movería los cambios a una rama de `testing` para evaluar su comportamiento frente a distintos casos y asegurar su correcto funcionamiento antes de integrarlo al flujo principal del proyecto.
 
 ---
+
