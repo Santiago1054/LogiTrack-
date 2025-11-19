@@ -44,3 +44,15 @@ En segundo lugar, aprovecharía ese tiempo para escalar el proyecto: corregir de
 Finalmente, integraría APIs externas utilizando NiFi dentro del flujo del proyecto. Esto no solo ampliaría la funcionalidad, sino que también permitiría demostrar la capacidad de NiFi para gestionar conexiones, transformar datos y orquestar procesos en escenarios reales.
 
 
+## **Pregunta técnica**
+
+Al igual que en el ejercicio de enviar una notificación por correo, antes de comenzar a desarrollar una nueva funcionalidad es fundamental comprender exactamente qué se solicita y cuál es el comportamiento esperado. En este caso, sería necesario entender cómo se actualiza la ubicación del paquete y cómo debe mostrarse dicha información dentro del sistema.
+
+Para visualizar cómo interactúan los componentes y los actores involucrados, recurriría a diagramas UML. Estos permitirían representar el flujo del proceso, no solo desde la perspectiva del sistema, sino también desde la interacción del usuario y otros elementos relacionados.
+
+Después de comprender el flujo, investigaría cómo implementar el nuevo módulo encargado de mostrar la ubicación cuando el estado del paquete cambie. También sería necesario modificar la estructura de la base de datos, agregando o ajustando campos para almacenar la ubicación actualizada y cualquier información adicional que el sistema requiera para el seguimiento. (Es probable que nuevas ideas vayan surgiendo mientras se realiza el modulo)
+
+Antes de comenzar a desarrollar, crearía una nueva rama llamada, por ejemplo, feature/seguimiento-del-paquete. En esta rama implementaría toda la nueva funcionalidad y, una vez completada, realizaría un merge hacia la rama dev.
+
+Dentro de dev, aplicaría los ajustes generales necesarios y luego movería los cambios a una rama de testing para evaluar su comportamiento frente a distintos casos y asegurar su correcto funcionamiento antes de integrarlo al flujo principal del proyecto.
+
