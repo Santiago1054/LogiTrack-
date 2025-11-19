@@ -35,3 +35,12 @@ Algo nuevo que aprendí durante esta prueba fue el funcionamiento y la utilidad 
 
 A través de la lectura de documentación oficial, artículos especializados y ejemplos de uso, descubrí cómo NiFi permite diseñar flujos de datos, automatizar procesos y conectar múltiples sistemas de manera eficiente. Este proceso de investigación no solo me abrió la puerta a una herramienta que no conocía, sino que también me ayudó a ampliar mi perspectiva sobre soluciones de integración y procesamiento de datos.
 
+## **Si tuvieras una semana más, ¿qué mejorarías?**
+
+Si tuviera una semana adicional para trabajar en la prueba, me enfocaría en tres grandes mejoras. En primer lugar, dedicaría tiempo a estudiar Apache NiFi a mayor profundidad. Aunque ya comprendí su propósito y funcionamiento general, explorar sus componentes, patrones de flujo y buenas prácticas me permitiría aplicarlo de forma más sólida y eficiente.
+
+En segundo lugar, aprovecharía ese tiempo para escalar el proyecto: corregir detalles, optimizar partes del código, mejorar la estructura general, realizar pruebas e incorporar una documentación más clara, organizada y completa. Esto ayudaría a que el proyecto sea más mantenible y fácil de comprender por cualquier desarrollador.
+
+Finalmente, integraría APIs externas utilizando NiFi dentro del flujo del proyecto. Esto no solo ampliaría la funcionalidad, sino que también permitiría demostrar la capacidad de NiFi para gestionar conexiones, transformar datos y orquestar procesos en escenarios reales.
+
+
